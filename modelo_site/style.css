@@ -1,0 +1,128 @@
+*{padding: 0px; margin: 0px;}
+body{
+    background-color:#a3805d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin: 40px 0;
+}
+#banner{
+    width: 100%
+}
+h1{
+    font-family: "Caviar Dreams", sans-serif;
+    color:#f2f2f2;
+    background-color:#ca9b67;
+    padding: 15px;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 50px;
+}
+h2{
+    font-family: "Caviar Dreams", sans-serif;
+    color: #f2f2f2;
+    background-color:#ca9b67;
+    padding: 15px;
+    border-radius: 20px;
+}
+p{
+    font-family: "Alcubierre", sans-serif;
+    color:#f2f2f2;
+    background-color:#ca9b67;
+    padding: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; 
+}
+.textoinicial{
+    text-align: center;
+    padding: 50px;
+    font-size:20px;
+}
+.massagens{
+    font-family: "Alcubierre", sans-serif;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    line-height: 2.0;
+    margin-top: 10px;
+    color:#f2f2f2;
+    background-color:#ca9b67;
+    border-radius: 20px;
+    
+}
+.servicosoferecidos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.bloco1 h2{
+    width: 235px;
+    color: #f2f2f2;
+    padding-left: 30px;
+}
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px; 
+}
+.img-servicos{
+    height: 450px;
+}
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 400px;
+    padding-top: 10%;
+}
+.bloco2 h2{
+    width: 235px;
+    color: #f2f2f2;
+    padding-left: 30px; 
+}
+.bloco2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;  
+}
+.img-servicos2{
+    height: 450px;
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 400px;
+    padding-top: 10%;
+    max-width: 90%;
+}
+.botaozap {
+    display: inline-block;
+    padding: 10px 20px;
+    padding-top: 5%;
+    color:#f2f2f2;
+}
+footer{
+    color: #f2f2f2;
+    margin-top: 75px ;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  
+
+
