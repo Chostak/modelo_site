@@ -1,0 +1,342 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alcubierre", sans-serif;
+}
+
+/* Basic body styles */
+body {
+  line-height: 1.5;
+  font-size: 20px;
+  color: #f2f2f2;
+  background-color: #a3805d;
+}
+h1{
+  font-family: "Caviar Dreams", sans-serif;
+  color:#f2f2f2;
+  padding: 15px;
+  margin: 0 auto;
+  margin-left: 2%;
+  margin-top: 1%;
+  text-align:center;
+}
+
+
+
+/* Banner styles */
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ca9b67;
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px #9b6f46;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 15rem;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #9b6f46;;
+}
+
+.slider{              /*SLIDER*/
+  margin: 0 auto;
+  margin-top: 1%;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  overflow: hidden; /*se passar do tamanho ele adpta*/
+  box-shadow: 0 4px 8px #9b6f46;
+  border-radius: 10px;
+  
+  }
+      
+    .slides{
+      width:400%;
+      height:500px;
+      display: flex;
+    }
+      
+      .slides input{
+      display: none;
+      }
+      
+      .slide{
+      width: 25%;
+      position: relative;
+      transition:2s;
+      }
+      
+      .slide img{
+      max-width: 100%;
+      }
+      
+      .manual-navigation{
+      position: absolute;
+      width:500px;
+      margin-top: -40px;
+      display: flex;
+      justify-content: center;
+      }
+      
+      .manual-btn{
+      border: 3px solid #f2f2f2;
+      padding: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+      }
+      
+      .manual-btn:not(:Last-child){ /*Menos no ultimo item*/
+      margin-right:40px; 
+      }
+      
+      .manual-btn:hover{		
+      background-color: #9b6f46; /* Passar o mouse*/
+      }
+      
+      #radio1:checked ~ .first{ /* Parametro de troca de slide */
+      margin-left: 0;
+      }
+      
+      #radio2:checked ~ .first{
+      margin-left: -25%;
+      }
+  
+      #radio3:checked ~ .first{
+      margin-left: -50%;
+      }
+      
+      #radio4:checked ~ .first{
+      margin-left: -75%;
+      }
+      
+      .navigatinon-auto div{
+      border: 2px solid #000000; /*permanecer a cor quando seleciona*/
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+      }
+      
+      .navigation-auto{
+      position: absolute;
+      width: 800px;
+      margin-top: 400px;
+      display: flex;
+      justify-content: center;
+      }
+      
+      .navigation-auto div:not(:Last-child){
+      margin-right: 40px;
+      }
+  
+      #radio1:checked ~ .navigatinon-auto .auto-btn1{
+      background-color: #9b6f46;
+      }
+        
+      #radio2:checked ~ .navigatinon-auto .auto-btn2{
+      background-color: #9b6f46;
+      }
+  
+      #radio3:checked ~ .navigatinon-auto .auto-btn3{
+      background-color: #9b6f46;
+      }
+          
+      #radio4:checked ~ .navigatinon-auto .auto-btn4{
+      background-color: #9b6f46;
+      }
+      /* Fim slider */
+
+
+/* Estilo section */
+section {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #ca9b67;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #9b6f46;
+  width: 60%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#Apresentação .presentation-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: justify;
+  gap: 5rem;
+  margin-left: 3%;
+}
+
+#Apresentação .presentation-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+#Apresentação .imgp {
+  flex: 0 1 300px;
+  text-align: right;
+  margin-right: 2%;
+  margin-top: -6%;
+}
+.imgp img{
+  width: 100%;
+  height: auto;
+  border: 5px solid #9b6f46;
+  box-shadow: 0 4px 8px #9b6f46;
+  border-radius: 10px;
+}
+
+#Apresentação .presentation-text p {
+margin-bottom: 5rem;
+text-indent: 2rem;
+}
+
+/* Serviços section */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 5px solid #9b6f46;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #9b6f46;
+}
+
+details {
+  margin-bottom: 3rem;
+}
+
+details p {
+  margin-top: 1rem; /* Ajuste o valor conforme necessário */
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+summary {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  list-style: none;
+  cursor: pointer;
+}
+summary:hover{
+  color: #9b6f46;
+}
+
+details[open] summary {
+  color: #9b6f46;
+}
+
+/* Contact section */
+/* Estilo geral para a seção de contato */
+/* Estilo geral para a seção de contato */
+#Contato {
+  text-align: center;
+  padding: 20px;
+}
+
+#Contato p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  margin-top: 3%;
+}
+
+#social-button {
+  text-decoration: none;
+  display: inline-block; /* Faz com que os links respeitem centralização */
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 20px 20px;
+  margin: 10px auto; /* Centraliza o botão horizontalmente */
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-button img {
+  width: 30px; /* Tamanho dos ícones */
+  height: 30px;
+  margin-right: 10px;
+}
+
+.social-button .qr-code {
+  width: 30%; /* Tamanho do QR code */
+  height: 30%;
+  margin-left: 20%; /* Maior separação da palavra */
+}
+
+.instagram-button {
+  background-color: #e4405f;
+  color: #f2f2f2;
+}
+
+.instagram-button:hover {
+  background-color: #d73552;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  color: #f2f2f2;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5b;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #ca9b67;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 4px 8px #9b6f46;
+}
